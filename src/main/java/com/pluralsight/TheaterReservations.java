@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.text.DateFormat;
 import java.util.Scanner;
 
 public class TheaterReservations {
@@ -17,10 +18,12 @@ public class TheaterReservations {
         System.out.println("How many tickets would you like? ");
         int tickets = myScanner.nextInt();
 
+        // name split
+        String[] nameParts = name.split("\\s+");
+        String firstName = nameParts[0];
+        String lastName = nameParts[0];
 
         // convert date
-        // split name
-
 
         // singular ticket if/else
         String ticketCount = tickets == 1 ? "ticket" : "tickets";
